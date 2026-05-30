@@ -1,36 +1,39 @@
-🎬 Movie Recommendation System
+# 🎬 Movie Recommendation System
 
-A simple yet effective movie recommendation engine built with [Specify Main Technology, e.g., Python, Scikit-learn, Pandas]. This system suggests movies to users based on their preferences and viewing history.
+A simple Movie Recommendation System built using:
 
-🌟 Overview
+- Python
+- Flask
+- Pandas
+- Scikit-Learn
+- TF-IDF
+- Cosine Similarity
 
-This project implements a movie recommendation system using [Mention the core technique, e.g., collaborative filtering, content-based filtering, or a hybrid approach]. It analyzes user ratings or movie metadata (like genres, cast, and keywords) to provide personalized movie suggestions.
+## Features
 
-The goal is to help users discover movies they might love, based on their similarity to other users or their likeness to movies they've already enjoyed.
+- Recommend Top 5 Similar Movies
+- Content Based Filtering
+- Interactive Web Interface
+- Easy to Extend
 
-✨ Key Features
+## Project Structure
 
-Content-Based Filtering: Recommends movies similar to those a user has liked in the past, based on attributes like genre, director, cast, and plot keywords.
+Movie-Recommendation-System/
+│
+├── data/
+├── models/
+├── src/
+├── app/
+└── README.md
 
-Collaborative Filtering (Optional - if you built it): Suggests movies based on the preferences of similar users. (e.g., "Users who liked 'Inception' also liked 'The Matrix'").
+## Run Locally
 
-User Rating Input: Allows users to rate movies to build their profile.
+pip install -r requirements.txt
 
-Personalized Recommendations: Generates a custom list of movie suggestions for a given user.
+python src/preprocess.py
 
+python src/train_model.py
 
+cd app
 
-
-#🤝 Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
+python app.py
